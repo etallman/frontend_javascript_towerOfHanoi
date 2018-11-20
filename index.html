@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Tower of Hanoi Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <script src="tower.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
 </head>
+
 <body>
+    <div id="mainDiv">
+        <header>
+            <h1>Tower of Hanoi Game</h1>
 
-    <header>
-    <h1>Tower of Hanoi Game</h1>
-    <p>Blah Blah Some Instructions</p>
-    </header>
-
-    <div id = "gameBoard" class="gameBoardStyle"></div>
-        <div id = "towerLeft" class="towerLeftStyle">.</div>
-        <div id = "towerMiddle" class="towerMiddleStyle">.</div>
-        <div id = "towerRight" class="towerRightStyle">.</div>
+        </header>
+        <div class="instruct">
+            <h3>GAME INSTRUCTIONS:</h3>
+            <p>Move the entire stack from the starting tower to the last tower.</h3>
+                <ul>
+                    <li>Only one disc can be moved at a time.</li>
+                    <li>For each move, you can only use the uppermost disc on a tower</li>
+                    <li>No disc may be placed on a smaller disc</li>
+                </ul>
+            </p>Try to complete the game with as few moves as possible.</p>
+        </div>
+        <div id="gameBoard" class="gameBoardStyle">
+            <div id="towerLeft" class="tower">
+                <div class="disc" id="d4"></div>
+                <div class="disc" id="d3"></div>
+                <div class="disc" id="d2"></div>
+                <div class="disc" id="d1"></div>
+            </div>
+            <div id="towerMiddle" class="tower"></div>
+            <div id="towerRight" class="tower"></div>
+        </div>
+            <div class="result"><h2></h2></div>
     </div>
-
+    <script src="tower.js"></script>
 </body>
+
 </html>
